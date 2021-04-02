@@ -3,7 +3,7 @@
     clickable
     tag="a"
     target="_blank"
-    :href="link"
+    to="/"
   >
     <q-item-section
       v-if="icon"
@@ -14,9 +14,7 @@
 
     <q-item-section>
       <q-item-label>{{ title }}</q-item-label>
-      <q-item-label caption>
-        {{ caption }}
-      </q-item-label>
+
     </q-item-section>
   </q-item>
 </template>
@@ -30,15 +28,15 @@ export default {
       required: true
     },
 
-    caption: {
-      type: String,
-      default: ''
-    },
+    // caption: {
+    //   type: String,
+    //   default: ''
+    // },
 
-    link: {
-      type: String,
-      default: '#'
-    },
+    // link: {
+    //   type: String,
+    //   default: '#'
+    // },
 
     icon: {
       type: String,
